@@ -1,0 +1,20 @@
+{
+    "appName": "appioniccontacts",
+    "roleName": "pinpointLambdaRolef0687854",
+    "cloudWatchPolicyName": "cloudWatchPolicyf0687854",
+    "pinpointPolicyName": "pinpointPolicyf0687854",
+    "authPolicyName": "pinpoint_amplify_f0687854",
+    "unauthPolicyName": "pinpoint_amplify_f0687854",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

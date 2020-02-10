@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/Contacts",
+            "lambdaFunction": "ContactsLambda",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "ApiContacts",
+    "apiName": "ApiContacts",
+    "functionArns": [
+        {
+            "lambdaFunction": "ContactsLambda"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-appioniccontacts-envcontact-220459-authRole",
+        "unAuthRoleName": "amplify-appioniccontacts-envcontact-220459-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "ContactsLambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

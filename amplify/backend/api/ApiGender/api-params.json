@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/Gender",
+            "lambdaFunction": "GenderFunction",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "ApiGender",
+    "apiName": "ApiGender",
+    "functionArns": [
+        {
+            "lambdaFunction": "GenderFunction"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-appioniccontacts-envcontact-220459-authRole",
+        "unAuthRoleName": "amplify-appioniccontacts-envcontact-220459-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "GenderFunction",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

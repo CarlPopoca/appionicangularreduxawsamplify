@@ -1,0 +1,37 @@
+Publicar App.
+
+En un cmd vaya a la raiz de la App y ejecute el siguiente comando para crear un hosting:
+
+	Amplify add hosting
+
+Luego seleccione PROD(S3 with CloudFront using HTTPS). DEV (S3 only with HTTP)
+
+Especifique el nombre de su hosting, en mi caso puse appioniccontacts.
+
+Al terminar se mostrara el mensaje siguiente:
+
+	Static webhosting is disabled for the hosting bucket when CloudFront Distribution is enabled.
+
+	You can now publish your app using the following command:
+	Command: amplify publish
+
+Para publicar la App ejecute:
+	
+	amplify publish
+
+Enseguida le preguntara si desea realizar los cambios, escriba la letra y para continuar.
+
+Al terminar se mostrara el siguiente mensaje:
+
+	√ All resources are updated in the cloud
+	
+	Hosting endpoint: https://d239mjonl5cc2z.cloudfront.net
+
+https://appioniccontacts.cloudfront.net
+
+
+
+
+
+
+
